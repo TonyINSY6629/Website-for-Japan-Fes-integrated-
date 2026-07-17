@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Internship & Volunteer Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <img src="images/logo.png" alt="Portal Logo" class="site-logo" onerror="this.style.display='none'">
+
+  <div class="nav-links">
+    <a href="index.html">&larr; Back to Home</a>
+  </div>
+
+  <span class="page-kanji">登&#12288;録</span>
+  <h1>Applicant Registration</h1>
+  <p style="color: var(--ink-soft); margin-bottom: 16px;">Create your account to apply for internships or volunteer roles.</p>
+
+  <form action="register.php" method="post">
+    <table>
+      <tr>
+        <td>Full Name</td>
+        <td><input type="text" name="name" maxlength="50" placeholder="Jane Doe"></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="text" name="email" maxlength="100" placeholder="jane@example.com"></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td><input type="password" name="password" maxlength="100"></td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td><input type="text" name="address" maxlength="100"></td>
+      </tr>
+      <tr>
+        <td>City</td>
+        <td><input type="text" name="city" maxlength="50"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" value="Create Account"></td>
+      </tr>
+    </table>
+  </form>
+
+</div>
+
+</body>
+</html>

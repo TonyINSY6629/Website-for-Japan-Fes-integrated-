@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <img src="images/logo.png" alt="Portal Logo" class="site-logo" onerror="this.style.display='none'">
+
+  <div class="nav-links">
+    <a href="index.html">&larr; Back to Home</a>
+  </div>
+
+  <span class="page-kanji">申&#12288;込</span>
+  <h1>Submit an Application</h1>
+  <p style="color: var(--ink-soft); margin-bottom: 16px;">Apply for an internship or volunteer position.</p>
+
+  <form action="submit_application.php" method="post">
+    <table>
+      <tr>
+        <td>Applicant ID</td>
+        <td><input type="text" name="applicantid" placeholder="Your registered ID"></td>
+      </tr>
+      <tr>
+        <td>Position Title</td>
+        <td><input type="text" name="title" maxlength="100" placeholder="e.g., Marketing Internship - Summer 2026"></td>
+      </tr>
+      <tr>
+        <td>Description</td>
+        <td><textarea name="description" rows="6" placeholder="Tell us about your background, motivation, and availability..."></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" value="Submit Application"></td>
+      </tr>
+    </table>
+  </form>
+
+</div>
+
+</body>
+</html>
